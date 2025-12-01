@@ -1,0 +1,2517 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='word_frequency_inauguration_by_ideology' inline='true' name='federated.07ml2u2137nr3d14dmn6u0myaulx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='word_frequency_inauguration_by_ideology' name='textscan.09167yc11dra5b115hsov0ykjfft'>
+            <connection class='textscan' directory='C:/Users/kimse/OneDrive/Desktop/r/easy_r/text_mining/inauguration' filename='word_frequency_inauguration_by_ideology.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.09167yc11dra5b115hsov0ykjfft' name='word_frequency_inauguration_by_ideology.csv' table='[word_frequency_inauguration_by_ideology#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='word' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+            <column datatype='string' name='ideology' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[word_frequency_inauguration_by_ideology.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[word]</local-name>
+            <parent-name>[word_frequency_inauguration_by_ideology.csv]</parent-name>
+            <remote-alias>word</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[word_frequency_inauguration_by_ideology.csv_6652D662783346E983967EBBC7116454]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[word_frequency_inauguration_by_ideology.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[word_frequency_inauguration_by_ideology.csv_6652D662783346E983967EBBC7116454]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ideology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ideology]</local-name>
+            <parent-name>[word_frequency_inauguration_by_ideology.csv]</parent-name>
+            <remote-alias>ideology</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[word_frequency_inauguration_by_ideology.csv_6652D662783346E983967EBBC7116454]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='word_frequency_inauguration_by_ideology.csv' datatype='table' name='[__tableau_internal_object_id__].[word_frequency_inauguration_by_ideology.csv_6652D662783346E983967EBBC7116454]' role='measure' type='quantitative' />
+      <column caption='Ideology' datatype='string' name='[ideology]' role='dimension' type='nominal' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kimse/AppData/Local/Temp/TableauTemp/#TableauTemp_0as8gy51l7vfy81gg2iig1wa1ag9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 04:19:49 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>word</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[word]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>word</remote-alias>
+              <ordinal>0</ordinal>
+              <family>word_frequency_inauguration_by_ideology.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[word_frequency_inauguration_by_ideology.csv_6652D662783346E983967EBBC7116454]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>word_frequency_inauguration_by_ideology.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[word_frequency_inauguration_by_ideology.csv_6652D662783346E983967EBBC7116454]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ideology</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ideology]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ideology</remote-alias>
+              <ordinal>2</ordinal>
+              <family>word_frequency_inauguration_by_ideology.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[word_frequency_inauguration_by_ideology.csv_6652D662783346E983967EBBC7116454]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='word_frequency_inauguration_by_ideology.csv' id='word_frequency_inauguration_by_ideology.csv_6652D662783346E983967EBBC7116454'>
+            <properties context=''>
+              <relation connection='textscan.09167yc11dra5b115hsov0ykjfft' name='word_frequency_inauguration_by_ideology.csv' table='[word_frequency_inauguration_by_ideology#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='word' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                  <column datatype='string' name='ideology' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='whole_word_frequency_inauguration (2)' inline='true' name='federated.17c82ne0pk56np1em388u17rchzt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='whole_word_frequency_inauguration' name='textscan.1sy8gfc1nzyev215gffco17giwzg'>
+            <connection class='textscan' directory='C:/Users/kimse/OneDrive/Desktop/r/easy_r/text_mining/inauguration' filename='whole_word_frequency_inauguration.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1sy8gfc1nzyev215gffco17giwzg' name='whole_word_frequency_inauguration.csv' table='[whole_word_frequency_inauguration#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='word' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[whole_word_frequency_inauguration.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[word]</local-name>
+            <parent-name>[whole_word_frequency_inauguration.csv]</parent-name>
+            <remote-alias>word</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[whole_word_frequency_inauguration.csv_D37FA425269840B89152BAE5686FD49B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[whole_word_frequency_inauguration.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[whole_word_frequency_inauguration.csv_D37FA425269840B89152BAE5686FD49B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='whole_word_frequency_inauguration.csv' datatype='table' name='[__tableau_internal_object_id__].[whole_word_frequency_inauguration.csv_D37FA425269840B89152BAE5686FD49B]' role='measure' type='quantitative' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kimse/AppData/Local/Temp/TableauTemp/#TableauTemp_0g5rmz312nn4au13zh54f1rer62n.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 05:35:05 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>word</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[word]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>word</remote-alias>
+              <ordinal>0</ordinal>
+              <family>whole_word_frequency_inauguration.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[whole_word_frequency_inauguration.csv_D37FA425269840B89152BAE5686FD49B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>whole_word_frequency_inauguration.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[whole_word_frequency_inauguration.csv_D37FA425269840B89152BAE5686FD49B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='whole_word_frequency_inauguration.csv' id='whole_word_frequency_inauguration.csv_D37FA425269840B89152BAE5686FD49B'>
+            <properties context=''>
+              <relation connection='textscan.1sy8gfc1nzyev215gffco17giwzg' name='whole_word_frequency_inauguration.csv' table='[whole_word_frequency_inauguration#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='word' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='word_frequency_inauguration_by_ideology (2)' inline='true' name='federated.0jpssl213px3za10lhj071n6wk2z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='word_frequency_inauguration_by_ideology' name='textscan.1bcthkh0vbhktr11xayzu01ykmp9'>
+            <connection class='textscan' directory='C:/Users/kimse/OneDrive/Desktop/r/easy_r/text_mining/inauguration' filename='word_frequency_inauguration_by_ideology.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1bcthkh0vbhktr11xayzu01ykmp9' name='word_frequency_inauguration_by_ideology.csv' table='[word_frequency_inauguration_by_ideology#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='word' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+            <column datatype='string' name='ideology' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[word_frequency_inauguration_by_ideology.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[word]</local-name>
+            <parent-name>[word_frequency_inauguration_by_ideology.csv]</parent-name>
+            <remote-alias>word</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[word_frequency_inauguration_by_ideology.csv_28E1E892787E425CBE9A8C7288B8BFAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[word_frequency_inauguration_by_ideology.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[word_frequency_inauguration_by_ideology.csv_28E1E892787E425CBE9A8C7288B8BFAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ideology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ideology]</local-name>
+            <parent-name>[word_frequency_inauguration_by_ideology.csv]</parent-name>
+            <remote-alias>ideology</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[word_frequency_inauguration_by_ideology.csv_28E1E892787E425CBE9A8C7288B8BFAB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='word_frequency_inauguration_by_ideology.csv' datatype='table' name='[__tableau_internal_object_id__].[word_frequency_inauguration_by_ideology.csv_28E1E892787E425CBE9A8C7288B8BFAB]' role='measure' type='quantitative' />
+      <column caption='Ideology' datatype='string' name='[ideology]' role='dimension' type='nominal' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kimse/AppData/Local/Temp/TableauTemp/#TableauTemp_1n3dgxi0f3ul8o1fzse0d0vxbjki.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 05:35:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>word</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[word]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>word</remote-alias>
+              <ordinal>0</ordinal>
+              <family>word_frequency_inauguration_by_ideology.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[word_frequency_inauguration_by_ideology.csv_28E1E892787E425CBE9A8C7288B8BFAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>word_frequency_inauguration_by_ideology.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[word_frequency_inauguration_by_ideology.csv_28E1E892787E425CBE9A8C7288B8BFAB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ideology</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ideology]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ideology</remote-alias>
+              <ordinal>2</ordinal>
+              <family>word_frequency_inauguration_by_ideology.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[word_frequency_inauguration_by_ideology.csv_28E1E892787E425CBE9A8C7288B8BFAB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='word_frequency_inauguration_by_ideology.csv' id='word_frequency_inauguration_by_ideology.csv_28E1E892787E425CBE9A8C7288B8BFAB'>
+            <properties context=''>
+              <relation connection='textscan.1bcthkh0vbhktr11xayzu01ykmp9' name='word_frequency_inauguration_by_ideology.csv' table='[word_frequency_inauguration_by_ideology#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='word' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                  <column datatype='string' name='ideology' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='whole_word_frequency_inauguration' inline='true' name='federated.16c0hvn1xnlyvf0zz270h05nh657' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='whole_word_frequency_inauguration' name='textscan.0uo96te0otxa6m1f2vpme0ifroyp'>
+            <connection class='textscan' directory='C:/Users/kimse/OneDrive/Desktop/r/easy_r/text_mining/inauguration' filename='whole_word_frequency_inauguration.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0uo96te0otxa6m1f2vpme0ifroyp' name='whole_word_frequency_inauguration.csv' table='[whole_word_frequency_inauguration#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='word' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[whole_word_frequency_inauguration.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[word]</local-name>
+            <parent-name>[whole_word_frequency_inauguration.csv]</parent-name>
+            <remote-alias>word</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[whole_word_frequency_inauguration.csv_8D739B9CE0B84B1696FC0FC76AFEE44D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[whole_word_frequency_inauguration.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[whole_word_frequency_inauguration.csv_8D739B9CE0B84B1696FC0FC76AFEE44D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='whole_word_frequency_inauguration.csv' datatype='table' name='[__tableau_internal_object_id__].[whole_word_frequency_inauguration.csv_8D739B9CE0B84B1696FC0FC76AFEE44D]' role='measure' type='quantitative' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kimse/AppData/Local/Temp/TableauTemp/#TableauTemp_0a2mt2g0gezfal169yk340n73o7r.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 04:58:45 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>word</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[word]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>word</remote-alias>
+              <ordinal>0</ordinal>
+              <family>whole_word_frequency_inauguration.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[whole_word_frequency_inauguration.csv_8D739B9CE0B84B1696FC0FC76AFEE44D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>whole_word_frequency_inauguration.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[whole_word_frequency_inauguration.csv_8D739B9CE0B84B1696FC0FC76AFEE44D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='whole_word_frequency_inauguration.csv' id='whole_word_frequency_inauguration.csv_8D739B9CE0B84B1696FC0FC76AFEE44D'>
+            <properties context=''>
+              <relation connection='textscan.0uo96te0otxa6m1f2vpme0ifroyp' name='whole_word_frequency_inauguration.csv' table='[whole_word_frequency_inauguration#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='word' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='word_frequency_newyear_by_ideology' inline='true' name='federated.1thf5co1xj8lhk16m0j4p0aju4ro' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='word_frequency_newyear_by_ideology' name='textscan.1vokcfz0asr3qy1dgdb9y12y4sr1'>
+            <connection class='textscan' directory='C:/Users/kimse/OneDrive/Desktop/r/easy_r/text_mining/newyear' filename='word_frequency_newyear_by_ideology.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1vokcfz0asr3qy1dgdb9y12y4sr1' name='word_frequency_newyear_by_ideology.csv' table='[word_frequency_newyear_by_ideology#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='word' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+            <column datatype='string' name='ideology' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[word_frequency_newyear_by_ideology.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[word]</local-name>
+            <parent-name>[word_frequency_newyear_by_ideology.csv]</parent-name>
+            <remote-alias>word</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[word_frequency_newyear_by_ideology.csv_F080F73C2DE1490082B85930ADEFF008]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[word_frequency_newyear_by_ideology.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[word_frequency_newyear_by_ideology.csv_F080F73C2DE1490082B85930ADEFF008]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ideology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ideology]</local-name>
+            <parent-name>[word_frequency_newyear_by_ideology.csv]</parent-name>
+            <remote-alias>ideology</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[word_frequency_newyear_by_ideology.csv_F080F73C2DE1490082B85930ADEFF008]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='word_frequency_newyear_by_ideology.csv' datatype='table' name='[__tableau_internal_object_id__].[word_frequency_newyear_by_ideology.csv_F080F73C2DE1490082B85930ADEFF008]' role='measure' type='quantitative' />
+      <column caption='Ideology' datatype='string' name='[ideology]' role='dimension' type='nominal' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kimse/AppData/Local/Temp/TableauTemp/#TableauTemp_09w26mc0anln2t19cabm71q8yd64.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 04:18:15 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>word</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[word]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>word</remote-alias>
+              <ordinal>0</ordinal>
+              <family>word_frequency_newyear_by_ideology.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[word_frequency_newyear_by_ideology.csv_F080F73C2DE1490082B85930ADEFF008]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>word_frequency_newyear_by_ideology.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[word_frequency_newyear_by_ideology.csv_F080F73C2DE1490082B85930ADEFF008]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ideology</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ideology]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ideology</remote-alias>
+              <ordinal>2</ordinal>
+              <family>word_frequency_newyear_by_ideology.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[word_frequency_newyear_by_ideology.csv_F080F73C2DE1490082B85930ADEFF008]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='word_frequency_newyear_by_ideology.csv' id='word_frequency_newyear_by_ideology.csv_F080F73C2DE1490082B85930ADEFF008'>
+            <properties context=''>
+              <relation connection='textscan.1vokcfz0asr3qy1dgdb9y12y4sr1' name='word_frequency_newyear_by_ideology.csv' table='[word_frequency_newyear_by_ideology#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='word' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                  <column datatype='string' name='ideology' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='whole_word_frequency_newyear (2)' inline='true' name='federated.0dw90090y2343617927jg0r72xsy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='whole_word_frequency_newyear' name='textscan.0oyhre20sr8xty14t2gg60wn49uk'>
+            <connection class='textscan' directory='C:/Users/kimse/OneDrive/Desktop/r/easy_r/text_mining/newyear' filename='whole_word_frequency_newyear.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0oyhre20sr8xty14t2gg60wn49uk' name='whole_word_frequency_newyear.csv' table='[whole_word_frequency_newyear#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='word' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[whole_word_frequency_newyear.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[word]</local-name>
+            <parent-name>[whole_word_frequency_newyear.csv]</parent-name>
+            <remote-alias>word</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[whole_word_frequency_newyear.csv_D9F24CDFAD464D548645A68100517675]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[whole_word_frequency_newyear.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[whole_word_frequency_newyear.csv_D9F24CDFAD464D548645A68100517675]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='whole_word_frequency_newyear.csv' datatype='table' name='[__tableau_internal_object_id__].[whole_word_frequency_newyear.csv_D9F24CDFAD464D548645A68100517675]' role='measure' type='quantitative' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kimse/AppData/Local/Temp/TableauTemp/#TableauTemp_1v35j150y5ws991gzd05t04zgdcf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 05:39:43 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>word</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[word]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>word</remote-alias>
+              <ordinal>0</ordinal>
+              <family>whole_word_frequency_newyear.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[whole_word_frequency_newyear.csv_D9F24CDFAD464D548645A68100517675]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>whole_word_frequency_newyear.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[whole_word_frequency_newyear.csv_D9F24CDFAD464D548645A68100517675]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='whole_word_frequency_newyear.csv' id='whole_word_frequency_newyear.csv_D9F24CDFAD464D548645A68100517675'>
+            <properties context=''>
+              <relation connection='textscan.0oyhre20sr8xty14t2gg60wn49uk' name='whole_word_frequency_newyear.csv' table='[whole_word_frequency_newyear#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='word' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='whole_word_frequency_unionaddress' inline='true' name='federated.14g5rti17awxyk17gkjol10j6fwr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='whole_word_frequency_unionaddress' name='textscan.1s0hrp111ibkwg13ke7770jkh6a7'>
+            <connection class='textscan' directory='C:/Users/kimse/OneDrive/Desktop/r/easy_r/text_mining/unionaddress' filename='whole_word_frequency_unionaddress.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1s0hrp111ibkwg13ke7770jkh6a7' name='whole_word_frequency_unionaddress.csv' table='[whole_word_frequency_unionaddress#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='word' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[whole_word_frequency_unionaddress.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[word]</local-name>
+            <parent-name>[whole_word_frequency_unionaddress.csv]</parent-name>
+            <remote-alias>word</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[whole_word_frequency_unionaddress.csv_F5AA7BBC060C4098901B435F5D88B1E8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[whole_word_frequency_unionaddress.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[whole_word_frequency_unionaddress.csv_F5AA7BBC060C4098901B435F5D88B1E8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='whole_word_frequency_unionaddress.csv' datatype='table' name='[__tableau_internal_object_id__].[whole_word_frequency_unionaddress.csv_F5AA7BBC060C4098901B435F5D88B1E8]' role='measure' type='quantitative' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kimse/AppData/Local/Temp/TableauTemp/#TableauTemp_1rzk7xu1kafl801ekf3n810xjs8v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 05:39:46 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>word</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[word]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>word</remote-alias>
+              <ordinal>0</ordinal>
+              <family>whole_word_frequency_unionaddress.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[whole_word_frequency_unionaddress.csv_F5AA7BBC060C4098901B435F5D88B1E8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>whole_word_frequency_unionaddress.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[whole_word_frequency_unionaddress.csv_F5AA7BBC060C4098901B435F5D88B1E8]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='whole_word_frequency_unionaddress.csv' id='whole_word_frequency_unionaddress.csv_F5AA7BBC060C4098901B435F5D88B1E8'>
+            <properties context=''>
+              <relation connection='textscan.1s0hrp111ibkwg13ke7770jkh6a7' name='whole_word_frequency_unionaddress.csv' table='[whole_word_frequency_unionaddress#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='word' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='word_frequency_unionaddress_by_ideology' inline='true' name='federated.1eqppzf1v862191069ze20p2jc1r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='word_frequency_unionaddress_by_ideology' name='textscan.0u1xuk41qvjsi81bfdq6y19bfxnv'>
+            <connection class='textscan' directory='C:/Users/kimse/OneDrive/Desktop/r/easy_r/text_mining/unionaddress' filename='word_frequency_unionaddress_by_ideology.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0u1xuk41qvjsi81bfdq6y19bfxnv' name='word_frequency_unionaddress_by_ideology.csv' table='[word_frequency_unionaddress_by_ideology#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='word' ordinal='0' />
+            <column datatype='integer' name='n' ordinal='1' />
+            <column datatype='string' name='ideology' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[word_frequency_unionaddress_by_ideology.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[word]</local-name>
+            <parent-name>[word_frequency_unionaddress_by_ideology.csv]</parent-name>
+            <remote-alias>word</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[word_frequency_unionaddress_by_ideology.csv_67A2ACD16C3E491ABACC783C1A0CAA61]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n]</local-name>
+            <parent-name>[word_frequency_unionaddress_by_ideology.csv]</parent-name>
+            <remote-alias>n</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[word_frequency_unionaddress_by_ideology.csv_67A2ACD16C3E491ABACC783C1A0CAA61]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ideology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ideology]</local-name>
+            <parent-name>[word_frequency_unionaddress_by_ideology.csv]</parent-name>
+            <remote-alias>ideology</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[word_frequency_unionaddress_by_ideology.csv_67A2ACD16C3E491ABACC783C1A0CAA61]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='word_frequency_unionaddress_by_ideology.csv' datatype='table' name='[__tableau_internal_object_id__].[word_frequency_unionaddress_by_ideology.csv_67A2ACD16C3E491ABACC783C1A0CAA61]' role='measure' type='quantitative' />
+      <column caption='Ideology' datatype='string' name='[ideology]' role='dimension' type='nominal' />
+      <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+      <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kimse/AppData/Local/Temp/TableauTemp/#TableauTemp_0ncv3y41s1lzsb154an5z0ju8thw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 05:40:34 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>word</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[word]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>word</remote-alias>
+              <ordinal>0</ordinal>
+              <family>word_frequency_unionaddress_by_ideology.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[word_frequency_unionaddress_by_ideology.csv_67A2ACD16C3E491ABACC783C1A0CAA61]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[n]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n</remote-alias>
+              <ordinal>1</ordinal>
+              <family>word_frequency_unionaddress_by_ideology.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[word_frequency_unionaddress_by_ideology.csv_67A2ACD16C3E491ABACC783C1A0CAA61]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ideology</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ideology]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ideology</remote-alias>
+              <ordinal>2</ordinal>
+              <family>word_frequency_unionaddress_by_ideology.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[word_frequency_unionaddress_by_ideology.csv_67A2ACD16C3E491ABACC783C1A0CAA61]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='word_frequency_unionaddress_by_ideology.csv' id='word_frequency_unionaddress_by_ideology.csv_67A2ACD16C3E491ABACC783C1A0CAA61'>
+            <properties context=''>
+              <relation connection='textscan.0u1xuk41qvjsi81bfdq6y19bfxnv' name='word_frequency_unionaddress_by_ideology.csv' table='[word_frequency_unionaddress_by_ideology#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='word' ordinal='0' />
+                  <column datatype='integer' name='n' ordinal='1' />
+                  <column datatype='string' name='ideology' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='inauguration_ideology_frequency'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='word_frequency_inauguration_by_ideology (2)' name='federated.0jpssl213px3za10lhj071n6wk2z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jpssl213px3za10lhj071n6wk2z'>
+            <column caption='Ideology' datatype='string' name='[ideology]' role='dimension' type='nominal' />
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column-instance column='[ideology]' derivation='None' name='[none:ideology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[word]' derivation='None' name='[none:word:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='Sum' name='[sum:n:qk]' pivot='key' type='quantitative' />
+            <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0jpssl213px3za10lhj071n6wk2z].[none:word:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0jpssl213px3za10lhj071n6wk2z].[sum:n:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0jpssl213px3za10lhj071n6wk2z].[none:ideology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0jpssl213px3za10lhj071n6wk2z].[none:word:nk]</rows>
+        <cols>([federated.0jpssl213px3za10lhj071n6wk2z].[none:ideology:nk] * [federated.0jpssl213px3za10lhj071n6wk2z].[sum:n:qk])</cols>
+      </table>
+      <simple-id uuid='{0A697213-0EE4-492B-BE39-54F044ABD006}' />
+    </worksheet>
+    <worksheet name='inauguration_whole_frequency'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='whole_word_frequency_inauguration (2)' name='federated.17c82ne0pk56np1em388u17rchzt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17c82ne0pk56np1em388u17rchzt'>
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column-instance column='[word]' derivation='None' name='[none:word:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='Sum' name='[sum:n:qk]' pivot='key' type='quantitative' />
+            <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.17c82ne0pk56np1em388u17rchzt].[none:word:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.17c82ne0pk56np1em388u17rchzt].[sum:n:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17c82ne0pk56np1em388u17rchzt].[sum:n:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17c82ne0pk56np1em388u17rchzt].[none:word:nk]</rows>
+        <cols>[federated.17c82ne0pk56np1em388u17rchzt].[sum:n:qk]</cols>
+      </table>
+      <simple-id uuid='{A3CF4944-50CD-4BD8-A9FF-4A63EBFE5389}' />
+    </worksheet>
+    <worksheet name='newyear_ideology_frequency'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='word_frequency_newyear_by_ideology' name='federated.1thf5co1xj8lhk16m0j4p0aju4ro' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1thf5co1xj8lhk16m0j4p0aju4ro'>
+            <column caption='Ideology' datatype='string' name='[ideology]' role='dimension' type='nominal' />
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column-instance column='[ideology]' derivation='None' name='[none:ideology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[word]' derivation='None' name='[none:word:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='Sum' name='[sum:n:qk]' pivot='key' type='quantitative' />
+            <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1thf5co1xj8lhk16m0j4p0aju4ro].[none:word:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1thf5co1xj8lhk16m0j4p0aju4ro].[sum:n:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1thf5co1xj8lhk16m0j4p0aju4ro].[none:ideology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1thf5co1xj8lhk16m0j4p0aju4ro].[none:word:nk]</rows>
+        <cols>([federated.1thf5co1xj8lhk16m0j4p0aju4ro].[none:ideology:nk] * [federated.1thf5co1xj8lhk16m0j4p0aju4ro].[sum:n:qk])</cols>
+      </table>
+      <simple-id uuid='{39746385-3D61-435F-B042-08CFD1876AC8}' />
+    </worksheet>
+    <worksheet name='newyear_whole_frequency'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='whole_word_frequency_newyear (2)' name='federated.0dw90090y2343617927jg0r72xsy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dw90090y2343617927jg0r72xsy'>
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column-instance column='[word]' derivation='None' name='[none:word:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='Sum' name='[sum:n:qk]' pivot='key' type='quantitative' />
+            <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0dw90090y2343617927jg0r72xsy].[none:word:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0dw90090y2343617927jg0r72xsy].[sum:n:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0dw90090y2343617927jg0r72xsy].[sum:n:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0dw90090y2343617927jg0r72xsy].[none:word:nk]</rows>
+        <cols>[federated.0dw90090y2343617927jg0r72xsy].[sum:n:qk]</cols>
+      </table>
+      <simple-id uuid='{F7AA2B71-D127-4DB4-B058-B100E10AC045}' />
+    </worksheet>
+    <worksheet name='unionaddress_ideology_frequency'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='word_frequency_unionaddress_by_ideology' name='federated.1eqppzf1v862191069ze20p2jc1r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eqppzf1v862191069ze20p2jc1r'>
+            <column caption='Ideology' datatype='string' name='[ideology]' role='dimension' type='nominal' />
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column-instance column='[ideology]' derivation='None' name='[none:ideology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[word]' derivation='None' name='[none:word:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='Sum' name='[sum:n:qk]' pivot='key' type='quantitative' />
+            <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1eqppzf1v862191069ze20p2jc1r].[none:word:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1eqppzf1v862191069ze20p2jc1r].[sum:n:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1eqppzf1v862191069ze20p2jc1r].[none:ideology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1eqppzf1v862191069ze20p2jc1r].[none:word:nk]</rows>
+        <cols>([federated.1eqppzf1v862191069ze20p2jc1r].[none:ideology:nk] * [federated.1eqppzf1v862191069ze20p2jc1r].[sum:n:qk])</cols>
+      </table>
+      <simple-id uuid='{932B180E-7FE0-4EC7-B3F0-53EB6D34C4E5}' />
+    </worksheet>
+    <worksheet name='unionaddress_whole_frequency'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='whole_word_frequency_unionaddress' name='federated.14g5rti17awxyk17gkjol10j6fwr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14g5rti17awxyk17gkjol10j6fwr'>
+            <column caption='N' datatype='integer' name='[n]' role='measure' type='quantitative' />
+            <column-instance column='[word]' derivation='None' name='[none:word:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n]' derivation='Sum' name='[sum:n:qk]' pivot='key' type='quantitative' />
+            <column caption='Word' datatype='string' name='[word]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.14g5rti17awxyk17gkjol10j6fwr].[none:word:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.14g5rti17awxyk17gkjol10j6fwr].[sum:n:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14g5rti17awxyk17gkjol10j6fwr].[sum:n:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14g5rti17awxyk17gkjol10j6fwr].[none:word:nk]</rows>
+        <cols>[federated.14g5rti17awxyk17gkjol10j6fwr].[sum:n:qk]</cols>
+      </table>
+      <simple-id uuid='{3FD54AAF-3D8D-4630-9C5C-6B331E4E8C14}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='219'>
+    <window class='worksheet' name='inauguration_whole_frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17c82ne0pk56np1em388u17rchzt].[sum:n:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17c82ne0pk56np1em388u17rchzt].[none:word:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{446C15B2-A94F-4BB8-94D2-FD7860203D4E}' />
+    </window>
+    <window class='worksheet' name='inauguration_ideology_frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0jpssl213px3za10lhj071n6wk2z].[none:ideology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jpssl213px3za10lhj071n6wk2z].[none:ideology:nk]</field>
+            <field>[federated.0jpssl213px3za10lhj071n6wk2z].[none:word:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{54471318-F598-484D-8180-28428BCB2CD8}' />
+    </window>
+    <window class='worksheet' name='newyear_whole_frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0dw90090y2343617927jg0r72xsy].[sum:n:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0dw90090y2343617927jg0r72xsy].[none:word:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1B680C6C-4B87-4185-AA06-04E58EBEC20A}' />
+    </window>
+    <window class='worksheet' name='newyear_ideology_frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1thf5co1xj8lhk16m0j4p0aju4ro].[none:ideology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1thf5co1xj8lhk16m0j4p0aju4ro].[none:ideology:nk]</field>
+            <field>[federated.1thf5co1xj8lhk16m0j4p0aju4ro].[none:word:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C558C8FE-9F13-459C-8C16-28AB46182CFB}' />
+    </window>
+    <window class='worksheet' name='unionaddress_whole_frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14g5rti17awxyk17gkjol10j6fwr].[sum:n:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14g5rti17awxyk17gkjol10j6fwr].[none:word:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F73A104D-2A3E-4084-A654-14F522CFDB2E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='unionaddress_ideology_frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1eqppzf1v862191069ze20p2jc1r].[none:ideology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1eqppzf1v862191069ze20p2jc1r].[none:ideology:nk]</field>
+            <field>[federated.1eqppzf1v862191069ze20p2jc1r].[none:word:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E855E755-DF14-403E-918B-CD25C45E46BD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='inauguration_ideology_frequency' width='192'>
+      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
+      mv8PDDSZq6cpWN0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='inauguration_whole_frequency' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='newyear_ideology_frequency' width='192'>
+      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
+      IQDBueb/A2twJFC9tY+fAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='newyear_whole_frequency' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='unionaddress_ideology_frequency' width='192'>
+      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
+      U40QgOBU8/8B85sxZoDx9AMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='unionaddress_whole_frequency' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
