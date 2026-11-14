@@ -45,37 +45,37 @@ ggplot(top10, aes(x = reorder_within(word, n , president), y = n, fill = preside
 
 df_wide <- speeches %>%  pivot_wider(names_from = president, values_from = n, values_fill = list(n=0))
 
-# 기준: 이재명
+# Reference: 21st President (Lee Jae Myung)
 others_lee <- rowSums(select(df_wide, -word, -lee))
 df_wide <- df_wide %>% 
   mutate(ratio_lee = (lee + 1) / sum(lee + 1),
          ratio_others_lee = (others_lee + 1) / sum(others_lee + 1),
          odds_lee = ratio_lee / ratio_others_lee)
-# 기준: 윤석열
+# Reference: 20th President (Yoon Suk Yeol)
 others_yoon <- rowSums(select(df_wide, -word, -yoon))
 df_wide <- df_wide %>%
   mutate(ratio_yoon = (yoon + 1) / sum(yoon + 1),
     ratio_others_yoon = (others_yoon + 1) / sum(others_yoon + 1),
     odds_yoon = ratio_yoon / ratio_others_yoon)
-# 기준: 문재인
+# Reference: 19th President (Moon Jae-in)
 others_moon <- rowSums(select(df_wide, -word, -moon))
 df_wide <- df_wide %>%
   mutate(ratio_moon = (moon + 1) / sum(moon + 1),
          ratio_others_moon = (others_moon + 1) / sum(others_moon + 1),
          odds_moon = ratio_moon / ratio_others_moon)
-# 기준: 박근혜
+# Reference: 18th President (Park Geun-hye)
 others_park <- rowSums(select(df_wide, -word, -park))
 df_wide <- df_wide %>%
   mutate(ratio_park = (park + 1) / sum(park + 1),
          ratio_others_park = (others_park + 1) / sum(others_park + 1),
          odds_park = ratio_park / ratio_others_park)
-# 기준: 이명박
+# Reference: 17th President (Lee Myung-bak)
 others_mb <- rowSums(select(df_wide, -word, -mb))
 df_wide <- df_wide %>%
   mutate(ratio_mb = (mb + 1) / sum(mb + 1),
          ratio_others_mb = (others_mb + 1) / sum(others_mb + 1),
          odds_mb = ratio_mb / ratio_others_mb)
-# 기준: 노무현
+# Reference: 16th President (Roh Moo-hyun)
 others_noh <- rowSums(select(df_wide, -word, -noh))
 df_wide <- df_wide %>%
   mutate(ratio_noh = (noh + 1) / sum(noh + 1),
